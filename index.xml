@@ -7,7 +7,26 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Eaglewoodzzz</copyright>
-        <lastBuildDate>Sun, 12 Jan 2025 13:43:45 +0800</lastBuildDate><atom:link href="https://eaglewoodzzz.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 13 Jan 2025 22:01:59 +0800</lastBuildDate><atom:link href="https://eaglewoodzzz.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>多端编辑</title>
+        <link>https://eaglewoodzzz.github.io/p/%E5%A4%9A%E7%AB%AF%E7%BC%96%E8%BE%91/</link>
+        <pubDate>Mon, 13 Jan 2025 22:01:59 +0800</pubDate>
+        
+        <guid>https://eaglewoodzzz.github.io/p/%E5%A4%9A%E7%AB%AF%E7%BC%96%E8%BE%91/</guid>
+        <description>&lt;h1 id=&#34;多端编辑&#34;&gt;多端编辑
+&lt;/h1&gt;&lt;p&gt;这篇文章由手机编写。&lt;/p&gt;
+&lt;h3 id=&#34;坚果云&#34;&gt;坚果云
+&lt;/h3&gt;&lt;p&gt;坚果云负责同步手机端和电脑端，将电脑端的content/post文件夹设置为同步，这样就可以同时在手机和电脑端访问到文章文件了。&lt;/p&gt;
+&lt;h3 id=&#34;手机端&#34;&gt;手机端
+&lt;/h3&gt;&lt;p&gt;如果想新建文章，直接在坚果云里面新建，超级好之后可以自动同步到电脑端。&lt;/p&gt;
+&lt;h3 id=&#34;电脑端&#34;&gt;电脑端
+&lt;/h3&gt;&lt;p&gt;手机端编辑完成之后，电脑收到同步。
+运行命令&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new content post/title/index.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;创建一篇新文章，再把手机端编辑的内容复制进去排版即可。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>你好</title>
         <link>https://eaglewoodzzz.github.io/p/%E4%BD%A0%E5%A5%BD/</link>
         <pubDate>Sun, 12 Jan 2025 13:43:45 +0800</pubDate>
@@ -21,6 +40,9 @@
 &lt;h3 id=&#34;关于评论系统&#34;&gt;关于评论系统
 &lt;/h3&gt;&lt;p&gt;好不容易搭建了一个giscus的评论系统，弄好后才发现需要登录才能回复，对路人太不友好了&amp;#x1f622;,等有空了再试试waline​,我看这个不用登陆就可以评论。&lt;/p&gt;
 &lt;p&gt;(不过有谁会看到我的博客呢？又有谁会评论呢&amp;#x1f604;)&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;关于多端编辑&#34;&gt;关于多端编辑
+&lt;/h3&gt;&lt;p&gt;这句话是用手机的mt文本编辑器编辑的，并且由坚果云同步到电脑&lt;/p&gt;
 </description>
         </item>
         <item>

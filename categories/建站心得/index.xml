@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on 沉香子</title>
-        <link>https://eaglewoodzzz.github.io/post/</link>
-        <description>Recent content in Posts on 沉香子</description>
+        <title>建站心得 on 沉香子</title>
+        <link>https://eaglewoodzzz.github.io/categories/%E5%BB%BA%E7%AB%99%E5%BF%83%E5%BE%97/</link>
+        <description>Recent content in 建站心得 on 沉香子</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Eaglewoodzzz</copyright>
-        <lastBuildDate>Mon, 13 Jan 2025 22:01:59 +0800</lastBuildDate><atom:link href="https://eaglewoodzzz.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 13 Jan 2025 22:01:59 +0800</lastBuildDate><atom:link href="https://eaglewoodzzz.github.io/categories/%E5%BB%BA%E7%AB%99%E5%BF%83%E5%BE%97/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>多端编辑</title>
         <link>https://eaglewoodzzz.github.io/p/%E5%A4%9A%E7%AB%AF%E7%BC%96%E8%BE%91/</link>
         <pubDate>Mon, 13 Jan 2025 22:01:59 +0800</pubDate>
@@ -24,25 +24,6 @@
 运行命令&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new content post/title/index.md
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;创建一篇新文章，再把手机端编辑的内容复制进去排版即可。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>你好</title>
-        <link>https://eaglewoodzzz.github.io/p/%E4%BD%A0%E5%A5%BD/</link>
-        <pubDate>Sun, 12 Jan 2025 13:43:45 +0800</pubDate>
-        
-        <guid>https://eaglewoodzzz.github.io/p/%E4%BD%A0%E5%A5%BD/</guid>
-        <description>&lt;img src="https://eaglewoodzzz.github.io/p/%E4%BD%A0%E5%A5%BD/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post 你好" /&gt;&lt;p&gt;几经波折，终于成功的搭建了一个自己的博客。&lt;/p&gt;
-&lt;h3 id=&#34;这是我的第一篇文章&#34;&gt;这是我的第一篇文章
-&lt;/h3&gt;&lt;p&gt;也不分享什么东西，只是展示一下它搭建成功了。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;但是为什么文章封面有时显示不出来呢？&lt;/p&gt;
-&lt;h3 id=&#34;关于评论系统&#34;&gt;关于评论系统
-&lt;/h3&gt;&lt;p&gt;好不容易搭建了一个giscus的评论系统，弄好后才发现需要登录才能回复，对路人太不友好了&amp;#x1f622;,等有空了再试试waline​,我看这个不用登陆就可以评论。&lt;/p&gt;
-&lt;p&gt;(不过有谁会看到我的博客呢？又有谁会评论呢&amp;#x1f604;)&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;关于多端编辑&#34;&gt;关于多端编辑
-&lt;/h3&gt;&lt;p&gt;这句话是用手机的mt文本编辑器编辑的，并且由坚果云同步到电脑&lt;/p&gt;
 </description>
         </item>
         
