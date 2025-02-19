@@ -490,59 +490,58 @@
 </ol>
 <hr>
 <h2 id="-效果展示">🌈 效果展示
-</h2><pre tabindex="0"><code>
-```markdown
-# 用户
-用吃火锅解释Transformer架构
-
-# DeepSeek R1
-1. **顾客点单（输入嵌入）** 
-
-- 每位顾客（词语）带着自己的喜好（词向量）进店，比如牛肉党、青菜党、海鲜党
-- 服务员用扫码枪把菜品转化为数字订单（嵌入向量）
-
-2. **智能服务员（自注意力机制）** 
-
-- 服务员会观察全场顾客的关联：&#34;穿红衣服的女士点了毛肚，她旁边的孩子可能需要儿童套餐&#34;
-- 通过电子手环（位置编码）记住每桌的座位顺序
-- 后厨大屏实时显示各桌需求关联强度（注意力权重矩阵）
-
-3. **多岗位协作（多头注意力）** 
-
-- 食材调度员关注荤素搭配比例
-- 火候管理员监控不同汤底的沸腾程度
-- 传菜组长协调上菜顺序优先级
-- 8个岗位（8个头）各自专注不同维度
-
-4. **中央厨房（前馈网络）** 
-
-- 收到所有需求后，中央厨房开始统一处理：
-- 切肉机处理肉类订单（矩阵变换）
-- 洗菜流水线处理蔬菜订单（非线性激活）
-- 打包台统一封装（输出向量）
-
-5. **智能调度系统（残差连接 &amp; 层归一化）** 
-
-- 自动调节灶台火力：太咸的锅底加点汤（残差连接）
-- 平衡不同区域的温度（层归一化）
-- 确保每轮加工保持稳定状态
-
-6. **上菜机器人（解码器）** 
-
-- 根据累积的订单信息逐步输出：
-- 先上锅底（起始符）
-- 接着按顺序摆放食材（生成序列）
-- 实时调整摆盘方式（掩码注意力）
-- 直到摆满餐桌（遇到终止符）
-
-7. **顾客反馈（损失计算）** 
-
-- 顾客评分系统对比：
-- 预期摆盘（标注数据）vs 实际上菜（预测结果）
-- 调整后厨参数让下次摆盘更符合预期
-
-整个过程就像吃火锅时的动态协作：每个食材的处理既考虑自身特性，也关注其他食材的搭配，通过多轮协调最终呈现完美的火锅盛宴。这种并行处理方式，正是Transformer比RNN更快更高效的关键所在。
-</code></pre><hr>
+</h2><div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>```
+</span></span><span style="display:flex;"><span># 用户
+</span></span><span style="display:flex;"><span>用吃火锅解释Transformer架构
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># DeepSeek R1
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">1.</span> **顾客点单（输入嵌入）** 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">-</span> 每位顾客（词语）带着自己的喜好（词向量）进店，比如牛肉党、青菜党、海鲜党
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">-</span> 服务员用扫码枪把菜品转化为数字订单（嵌入向量）
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">2.</span> **智能服务员（自注意力机制）** 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">-</span> 服务员会观察全场顾客的关联：&#34;穿红衣服的女士点了毛肚，她旁边的孩子可能需要儿童套餐&#34;
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">-</span> 通过电子手环（位置编码）记住每桌的座位顺序
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">-</span> 后厨大屏实时显示各桌需求关联强度（注意力权重矩阵）
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">3.</span> **多岗位协作（多头注意力）** 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">-</span> 食材调度员关注荤素搭配比例
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">-</span> 火候管理员监控不同汤底的沸腾程度
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">-</span> 传菜组长协调上菜顺序优先级
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">-</span> 8个岗位（8个头）各自专注不同维度
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">4.</span> **中央厨房（前馈网络）** 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">-</span> 收到所有需求后，中央厨房开始统一处理：
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">-</span> 切肉机处理肉类订单（矩阵变换）
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">-</span> 洗菜流水线处理蔬菜订单（非线性激活）
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">-</span> 打包台统一封装（输出向量）
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">5.</span> **智能调度系统（残差连接 &amp; 层归一化）** 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">-</span> 自动调节灶台火力：太咸的锅底加点汤（残差连接）
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">-</span> 平衡不同区域的温度（层归一化）
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">-</span> 确保每轮加工保持稳定状态
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">6.</span> **上菜机器人（解码器）** 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">-</span> 根据累积的订单信息逐步输出：
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">-</span> 先上锅底（起始符）
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">-</span> 接着按顺序摆放食材（生成序列）
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">-</span> 实时调整摆盘方式（掩码注意力）
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">-</span> 直到摆满餐桌（遇到终止符）
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">7.</span> **顾客反馈（损失计算）** 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">-</span> 顾客评分系统对比：
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">-</span> 预期摆盘（标注数据）vs 实际上菜（预测结果）
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">-</span> 调整后厨参数让下次摆盘更符合预期
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>整个过程就像吃火锅时的动态协作：每个食材的处理既考虑自身特性，也关注其他食材的搭配，通过多轮协调最终呈现完美的火锅盛宴。这种并行处理方式，正是Transformer比RNN更快更高效的关键所在。
+</span></span></code></pre></div><hr>
 <p><strong>✨ 使用提示</strong>：</p>
 <ol>
 <li>长按代码块右上角可一键复制</li>

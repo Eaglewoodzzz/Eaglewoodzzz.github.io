@@ -160,59 +160,58 @@
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;-效果展示&#34;&gt;🌈 效果展示
-&lt;/h2&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
-```markdown
-# 用户
-用吃火锅解释Transformer架构
-
-# DeepSeek R1
-1. **顾客点单（输入嵌入）** 
-
-- 每位顾客（词语）带着自己的喜好（词向量）进店，比如牛肉党、青菜党、海鲜党
-- 服务员用扫码枪把菜品转化为数字订单（嵌入向量）
-
-2. **智能服务员（自注意力机制）** 
-
-- 服务员会观察全场顾客的关联：&amp;#34;穿红衣服的女士点了毛肚，她旁边的孩子可能需要儿童套餐&amp;#34;
-- 通过电子手环（位置编码）记住每桌的座位顺序
-- 后厨大屏实时显示各桌需求关联强度（注意力权重矩阵）
-
-3. **多岗位协作（多头注意力）** 
-
-- 食材调度员关注荤素搭配比例
-- 火候管理员监控不同汤底的沸腾程度
-- 传菜组长协调上菜顺序优先级
-- 8个岗位（8个头）各自专注不同维度
-
-4. **中央厨房（前馈网络）** 
-
-- 收到所有需求后，中央厨房开始统一处理：
-- 切肉机处理肉类订单（矩阵变换）
-- 洗菜流水线处理蔬菜订单（非线性激活）
-- 打包台统一封装（输出向量）
-
-5. **智能调度系统（残差连接 &amp;amp; 层归一化）** 
-
-- 自动调节灶台火力：太咸的锅底加点汤（残差连接）
-- 平衡不同区域的温度（层归一化）
-- 确保每轮加工保持稳定状态
-
-6. **上菜机器人（解码器）** 
-
-- 根据累积的订单信息逐步输出：
-- 先上锅底（起始符）
-- 接着按顺序摆放食材（生成序列）
-- 实时调整摆盘方式（掩码注意力）
-- 直到摆满餐桌（遇到终止符）
-
-7. **顾客反馈（损失计算）** 
-
-- 顾客评分系统对比：
-- 预期摆盘（标注数据）vs 实际上菜（预测结果）
-- 调整后厨参数让下次摆盘更符合预期
-
-整个过程就像吃火锅时的动态协作：每个食材的处理既考虑自身特性，也关注其他食材的搭配，通过多轮协调最终呈现完美的火锅盛宴。这种并行处理方式，正是Transformer比RNN更快更高效的关键所在。
-&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;```
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# 用户
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;用吃火锅解释Transformer架构
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# DeepSeek R1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;1.&lt;/span&gt; **顾客点单（输入嵌入）** 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 每位顾客（词语）带着自己的喜好（词向量）进店，比如牛肉党、青菜党、海鲜党
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 服务员用扫码枪把菜品转化为数字订单（嵌入向量）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;2.&lt;/span&gt; **智能服务员（自注意力机制）** 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 服务员会观察全场顾客的关联：&amp;#34;穿红衣服的女士点了毛肚，她旁边的孩子可能需要儿童套餐&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 通过电子手环（位置编码）记住每桌的座位顺序
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 后厨大屏实时显示各桌需求关联强度（注意力权重矩阵）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;3.&lt;/span&gt; **多岗位协作（多头注意力）** 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 食材调度员关注荤素搭配比例
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 火候管理员监控不同汤底的沸腾程度
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 传菜组长协调上菜顺序优先级
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 8个岗位（8个头）各自专注不同维度
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;4.&lt;/span&gt; **中央厨房（前馈网络）** 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 收到所有需求后，中央厨房开始统一处理：
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 切肉机处理肉类订单（矩阵变换）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 洗菜流水线处理蔬菜订单（非线性激活）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 打包台统一封装（输出向量）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;5.&lt;/span&gt; **智能调度系统（残差连接 &amp;amp; 层归一化）** 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 自动调节灶台火力：太咸的锅底加点汤（残差连接）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 平衡不同区域的温度（层归一化）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 确保每轮加工保持稳定状态
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;6.&lt;/span&gt; **上菜机器人（解码器）** 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 根据累积的订单信息逐步输出：
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 先上锅底（起始符）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 接着按顺序摆放食材（生成序列）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 实时调整摆盘方式（掩码注意力）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 直到摆满餐桌（遇到终止符）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;7.&lt;/span&gt; **顾客反馈（损失计算）** 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 顾客评分系统对比：
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 预期摆盘（标注数据）vs 实际上菜（预测结果）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 调整后厨参数让下次摆盘更符合预期
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;整个过程就像吃火锅时的动态协作：每个食材的处理既考虑自身特性，也关注其他食材的搭配，通过多轮协调最终呈现完美的火锅盛宴。这种并行处理方式，正是Transformer比RNN更快更高效的关键所在。
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;✨ 使用提示&lt;/strong&gt;：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;长按代码块右上角可一键复制&lt;/li&gt;
