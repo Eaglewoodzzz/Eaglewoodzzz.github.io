@@ -65,19 +65,28 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;例如我想发布一篇名为《你好》的文章，输入命令&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new content/post/&lt;span style=&#34;color:#98c379&#34;&gt;&amp;#34;你好&amp;#34;&lt;/span&gt;/index.md
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然后再到hugo目录下进入&lt;code&gt;content/post/你好/&lt;/code&gt;,点击里面的一个（也是唯一一个）&lt;code&gt;index.md&lt;/code&gt;文件，开始编辑内容。&lt;/p&gt;
+&lt;p&gt;可以看到这里是新建了一个文章文件夹，再到文件夹里面新建一个&lt;code&gt;index.md&lt;/code&gt;文件，而不是直接新建一个&lt;code&gt;title.md&lt;/code&gt;文件，这里是为了插入图片方便，后面会再提到。&lt;/p&gt;
 &lt;h4 id=&#34;2编辑文章&#34;&gt;2.编辑文章
 &lt;/h4&gt;&lt;p&gt;进入&lt;code&gt;index.md&lt;/code&gt;文件后，可以看到如下结构：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;D:%5cmyblog%5chugo_extended_withdeploy_0.140.2_windows-amd64%5cMyBlog%5ccontent%5cpost%5chello_world%5cPixPin_2025-02-19_19-27-59.jpg&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://eaglewoodzzz.github.io/p/%E4%BD%A0%E5%A5%BD/PixPin_2025-02-19_19-27-59.png&#34;
+	width=&#34;1194&#34;
+	height=&#34;718&#34;
+	srcset=&#34;https://eaglewoodzzz.github.io/p/%E4%BD%A0%E5%A5%BD/PixPin_2025-02-19_19-27-59_hu10225320019809418027.png 480w, https://eaglewoodzzz.github.io/p/%E4%BD%A0%E5%A5%BD/PixPin_2025-02-19_19-27-59_hu5650912847600203682.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;PixPin_2025-02-19_19-27-59&#34;
+		alt=&#34;pic&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;166&#34;
+		data-flex-basis=&#34;399px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;其中，红框框住的部分是文章属性，包含作者、日期、标题、分类、标签等信息。绿框框住的部分即为文章正文，用markdown格式编写即可。&lt;/p&gt;
+&lt;p&gt;==关于文章的图片插入==&lt;/p&gt;
+&lt;p&gt;markdown的图片插入语法是&lt;code&gt;![pic](/src)&lt;/code&gt;,其中&lt;code&gt;pic&lt;/code&gt;是你想给图片起的名字，即鼠标放上去会显示什么文字，&lt;code&gt;/src&lt;/code&gt;即为图片目录。&lt;/p&gt;
+&lt;p&gt;上文提到了创建文章的时候是新建一个文件夹，再到&lt;code&gt;index.md&lt;/code&gt;文件里面编辑文章，这样的好处在于我插入图片的时候可以使用相对路径，直接把图片文件放到文件夹下面，&lt;code&gt;/scr&lt;/code&gt;写成该图片的文件名即可。&lt;/p&gt;
+&lt;p&gt;如果用md编辑器（我用的是Typora）直接插入图片，可能插入的是绝对路径，那么采用绝对路径的图片文章一经发布之后，在文中是无法看到图片的（无论是本地还是线上），这就是为什么我会使用&lt;code&gt;/title/index.md&lt;/code&gt;这样的方式来发布文章。&lt;/p&gt;
 &lt;h4 id=&#34;3上传文章&#34;&gt;3.上传文章
 &lt;/h4&gt;&lt;p&gt;本地编辑好之后，只能在本地的hugo看到，如果想让文章网上冲浪，就要部署到自己的网站。由于hugo是静态博客，所以对项目的每一步操作完成之后都需要上传到网站。&lt;/p&gt;
 &lt;p&gt;我这里使用的是github的page页面，每次编辑好新文章之后需要手动push到git仓库。打开命令行，输入如下命令：&lt;/p&gt;
