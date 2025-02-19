@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>教程 on 沉香子</title>
+        <link>https://eaglewoodzzz.github.io/categories/%E6%95%99%E7%A8%8B/</link>
+        <description>Recent content in 教程 on 沉香子</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>Eaglewoodzzz</copyright>
+        <lastBuildDate>Wed, 19 Feb 2025 21:10:27 +0800</lastBuildDate><atom:link href="https://eaglewoodzzz.github.io/categories/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>本地搭建DeepSeek R1</title>
+        <link>https://eaglewoodzzz.github.io/p/%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BAdeepseek-r1/</link>
+        <pubDate>Wed, 19 Feb 2025 21:10:27 +0800</pubDate>
+        
+        <guid>https://eaglewoodzzz.github.io/p/%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BAdeepseek-r1/</guid>
+        <description>&lt;img src="https://eaglewoodzzz.github.io/p/%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BAdeepseek-r1/91533e86-32a0-47d6-8517-3a668fd0ec50.png" alt="Featured image of post 本地搭建DeepSeek R1" /&gt;&lt;h1 id=&#34;-手把手教你白嫖50万token本地驯服deepseek-r1全记录&#34;&gt;🤖 手把手教你白嫖50万Token！本地驯服DeepSeek R1全记录
+&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;作者&lt;/strong&gt;：某不愿透露姓名的研一AI驯兽师&lt;br&gt;
+&lt;strong&gt;耗时&lt;/strong&gt;：被实名认证卡住1小时 + 实际操作20分钟&lt;br&gt;
+&lt;strong&gt;成本&lt;/strong&gt;：0元（白嫖党的胜利 ✌️）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-前置准备清单&#34;&gt;📦 前置准备清单
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;一个能收验证码的手机号&lt;/li&gt;
+&lt;li&gt;1G以上存储空间（给AI小可爱腾个窝）&lt;/li&gt;
+&lt;li&gt;速溶咖啡☕（防止你在实名认证环节睡着）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-六步驯服ai小怪兽&#34;&gt;🔧 六步驯服AI小怪兽
+&lt;/h2&gt;&lt;h3 id=&#34;1-火山引擎注册大型实名认证真人秀&#34;&gt;1️⃣ 火山引擎注册（大型实名认证真人秀）
+&lt;/h3&gt;&lt;h4 id=&#34;认证小贴士&#34;&gt;认证小贴士
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;企业用户 → 公司注册&lt;/li&gt;
+&lt;li&gt;学生党 → 个人认证&lt;/li&gt;
+&lt;li&gt;完成认证后记得领取50万token新人礼包！&lt;/li&gt;
+&lt;li&gt;记得注册额后先实名认证&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;访问&lt;a class=&#34;link&#34; href=&#34;https://www.volcengine.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;火山方舟官网&lt;/a&gt;，点击&amp;quot;立即体验&amp;quot;&lt;/p&gt;
+&lt;h3 id=&#34;2-创建推理接入点给ai修个高速公路&#34;&gt;2️⃣ 创建推理接入点（给AI修个高速公路）
+&lt;/h3&gt;&lt;h4 id=&#34;接入点创建&#34;&gt;接入点创建
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;点击左侧菜单栏&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;选择&lt;strong&gt;火山方舟&lt;/strong&gt;大模型产品&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在左侧菜单栏中选择&lt;strong&gt;在线推理&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;选择&lt;strong&gt;自定义推理接入点&lt;/strong&gt; →&lt;strong&gt;创建推理接入点&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接入点名称随便填，模型选择&lt;strong&gt;DeepSeek R1&lt;/strong&gt;(如果你还想用V3也别急，后面再按相同的方式添加一个V3接入点即可)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果选择模型提示你未开通的话，按照提示开通一下就好，购买方式选择&lt;strong&gt;按Token付费&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;保存成功后即可在接入点列表中看到新建的模型：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://eaglewoodzzz.github.io/p/%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BAdeepseek-r1/PixPin_2025-02-19_20-48-50.jpg&#34;
+	width=&#34;1183&#34;
+	height=&#34;360&#34;
+	srcset=&#34;https://eaglewoodzzz.github.io/p/%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BAdeepseek-r1/PixPin_2025-02-19_20-48-50_hu4125786418633477480.jpg 480w, https://eaglewoodzzz.github.io/p/%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BAdeepseek-r1/PixPin_2025-02-19_20-48-50_hu12538584055817084147.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;接入点&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;328&#34;
+		data-flex-basis=&#34;788px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-获取api密钥拿到魔法咒语&#34;&gt;3️⃣ 获取API密钥（拿到魔法咒语）
+&lt;/h3&gt;&lt;h4 id=&#34;密钥获取路径&#34;&gt;密钥获取路径
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;点击左侧菜单栏&lt;/li&gt;
+&lt;li&gt;选择&lt;strong&gt;API Key管理&lt;/strong&gt;（在最下面，往下滑才能看到）&lt;/li&gt;
+&lt;li&gt;点击&lt;strong&gt;创建API Key&lt;/strong&gt;，随便输入一个名称，创建成功后立马复制并找个地方保存下来&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;重要提示千万不要随便给出你的秘钥这就是你家钥匙血泪教训&#34;&gt;重要提示：千万不要随便给出你的秘钥，这就是你家钥匙！！(血泪教训)
+&lt;/h4&gt;&lt;h3 id=&#34;4-下载cherry-studioai启动器&#34;&gt;4️⃣ 下载Cherry Studio（AI启动器）
+&lt;/h3&gt;&lt;p&gt;在&lt;a class=&#34;link&#34; href=&#34;https://cherry-ai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cherry Studio官网&lt;/a&gt;下载对应的Cherry Studio客户端并且安装&lt;/p&gt;
+&lt;h3 id=&#34;5-配置连接人机握手协议&#34;&gt;5️⃣ 配置连接（人机握手协议）
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;点击左下角⚙️ → 模型服务&lt;/li&gt;
+&lt;li&gt;下滑找到&lt;strong&gt;豆包&lt;/strong&gt;（火山引擎是字节跳动的产品，所以这里是豆包也没什么问题罢xd）&lt;/li&gt;
+&lt;li&gt;填写刚才复制的&lt;strong&gt;API秘钥&lt;/strong&gt;（悄咪咪的，不要让其他人看到你的秘钥）&lt;/li&gt;
+&lt;li&gt;重点来了，点击&lt;strong&gt;添加模型&lt;/strong&gt;，这里的&lt;strong&gt;模型ID&lt;/strong&gt;是刚才创建&lt;strong&gt;接入点模型&lt;/strong&gt;下面的那一小串英文！！！，通常是ep-xxxx，点击复制进来&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;模型名称&lt;/strong&gt;写个有辨识度的，比如你是deepseek R1模型就可以写R1，deepseek V3模型就可以写V3（它默认是模型ID的名称，并且新建了就不能更改了&amp;#x1f620;）&lt;/li&gt;
+&lt;li&gt;添加成功后在API秘钥那里点击&lt;strong&gt;检查&lt;/strong&gt;，选择你刚才创建的模型，出现绿色对钩之后就可以了。&lt;/li&gt;
+&lt;li&gt;接下来去首页享受你的AI机器人吧~&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;6-提示词工程让ai听懂人话&#34;&gt;6️⃣ 提示词工程（让AI听懂人话）
+&lt;/h3&gt;&lt;h4 id=&#34;你的专属智能体&#34;&gt;你的专属智能体
+&lt;/h4&gt;&lt;p&gt;Cherry Studio内置了许多助手（智能体），可以在左侧智能体&amp;#x2b50;那里选择​，选择你喜欢的智能体，点击&lt;strong&gt;添加到助手&lt;/strong&gt;，再回到聊天页面，选择这个助手开启新的聊天即可&lt;/p&gt;
+&lt;p&gt;另外也可以自己写一个智能体&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;点击&lt;strong&gt;创建智能体&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;去一个好听的名称（难听的也行）&lt;/li&gt;
+&lt;li&gt;输入提示词（格式参考下面的）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;```system
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;&lt;/span&gt;你是个精通技术文档的助手，回答时要：
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;1. 先给出关键结论
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;2. 用Markdown代码块展示操作步骤
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;3. 最后补充注意事项
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;```&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然后就可以享受你自己创建的智能体了（我才不会告诉你这里可以创建一个猫娘角色和你对话）&lt;/p&gt;
+&lt;h4 id=&#34;deepseek官方的智能体&#34;&gt;deepseek官方的智能体
+&lt;/h4&gt;&lt;p&gt;当然&lt;a class=&#34;link&#34; href=&#34;https://api-docs.deepseek.com/zh-cn/prompt-library/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;deepseek官方&lt;/a&gt;也提供了它们的一些提示词，我这里选了一个&lt;strong&gt;模型提示词生成&lt;/strong&gt;的助手，它可以根据用户的需求生成另一个智能体的提示词（禁止套娃&amp;#x26a0;&amp;#xfe0f;）&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mark&#34; data-lang=&#34;mark&#34;&gt;``` system	
+你是一位大模型提示词生成专家，请根据用户的需求编写一个智能助手的提示词，来指导大模型进行内容生成，要求：
+1. 以 Markdown 格式输出
+2. 贴合用户需求，描述智能助手的定位、能力、知识储备
+3. 提示词应清晰、精确、易于理解，在保持质量的同时，尽可能简洁
+4. 只输出提示词，不要输出多余解释
+```
+``` user
+请帮我生成一个“Linux 助手”的提示词
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;样例输出&#34;&gt;样例输出
+&lt;/h5&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mark&#34; data-lang=&#34;mark&#34;&gt;# Linux 助手提示词
+
+## 定位
+- **Linux 助手**：一个专注于提供 Linux 操作系统相关知识和支持的智能助手。
+
+## 能力
+- **系统管理**：能够提供 Linux 系统安装、配置、维护和优化的指导。
+- **命令行操作**：熟练掌握并解释各种 Linux 命令行工具和脚本。
+- **故障排除**：帮助用户诊断和解决常见的 Linux 系统问题。
+- **软件管理**：指导用户进行软件包的安装、更新和卸载。
+- **安全性**：提供 Linux 系统安全设置和最佳实践的建议。
+
+## 知识储备
+- **操作系统**：深入了解各种 Linux 发行版，如 Ubuntu、CentOS、Debian 等。
+- **网络配置**：熟悉 Linux 网络设置和配置，包括防火墙、路由和网络服务。
+- **文件系统**：掌握 Linux 文件系统结构和管理。
+- **编程环境**：了解在 Linux 上搭建和使用各种编程环境，如 Python、Java 等。
+
+## 使用示例
+- **用户问题**：如何安装 Apache 服务器？
+- **助手响应**：可以使用以下命令安装 Apache 服务器：
+  ```bash
+  sudo apt update
+  sudo apt install apache2
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后把上述生成的文本复制到你想创建的Linux 助手的提示词中即可&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-避坑指南血泪经验包&#34;&gt;💡 避坑指南（血泪经验包）
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;🚧 实名认证可能触发人脸识别（建议提前整理发型）&lt;/li&gt;
+&lt;li&gt;🔄 遇到429错误请优雅地重试（免费服务要排队）&lt;/li&gt;
+&lt;li&gt;🧠 复杂问题拆分成多轮对话（AI的短期记忆≈金鱼）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-效果展示&#34;&gt;🌈 效果展示
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;```
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# 用户
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;用吃火锅解释Transformer架构
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# DeepSeek R1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;1.&lt;/span&gt; **顾客点单（输入嵌入）** 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 每位顾客（词语）带着自己的喜好（词向量）进店，比如牛肉党、青菜党、海鲜党
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 服务员用扫码枪把菜品转化为数字订单（嵌入向量）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;2.&lt;/span&gt; **智能服务员（自注意力机制）** 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 服务员会观察全场顾客的关联：&amp;#34;穿红衣服的女士点了毛肚，她旁边的孩子可能需要儿童套餐&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 通过电子手环（位置编码）记住每桌的座位顺序
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 后厨大屏实时显示各桌需求关联强度（注意力权重矩阵）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;3.&lt;/span&gt; **多岗位协作（多头注意力）** 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 食材调度员关注荤素搭配比例
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 火候管理员监控不同汤底的沸腾程度
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 传菜组长协调上菜顺序优先级
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 8个岗位（8个头）各自专注不同维度
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;4.&lt;/span&gt; **中央厨房（前馈网络）** 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 收到所有需求后，中央厨房开始统一处理：
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 切肉机处理肉类订单（矩阵变换）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 洗菜流水线处理蔬菜订单（非线性激活）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 打包台统一封装（输出向量）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;5.&lt;/span&gt; **智能调度系统（残差连接 &amp;amp; 层归一化）** 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 自动调节灶台火力：太咸的锅底加点汤（残差连接）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 平衡不同区域的温度（层归一化）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 确保每轮加工保持稳定状态
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;6.&lt;/span&gt; **上菜机器人（解码器）** 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 根据累积的订单信息逐步输出：
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 先上锅底（起始符）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 接着按顺序摆放食材（生成序列）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 实时调整摆盘方式（掩码注意力）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 直到摆满餐桌（遇到终止符）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;7.&lt;/span&gt; **顾客反馈（损失计算）** 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 顾客评分系统对比：
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 预期摆盘（标注数据）vs 实际上菜（预测结果）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;-&lt;/span&gt; 调整后厨参数让下次摆盘更符合预期
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;整个过程就像吃火锅时的动态协作：每个食材的处理既考虑自身特性，也关注其他食材的搭配，通过多轮协调最终呈现完美的火锅盛宴。这种并行处理方式，正是Transformer比RNN更快更高效的关键所在。
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;✨ 使用提示&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;长按代码块右上角可一键复制&lt;/li&gt;
+&lt;li&gt;遇到问题欢迎在评论区召唤本驯兽师 🐼&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img src=&#34;https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;CC BY-NC-SA 4.0&#34;
+	
+	
+&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
