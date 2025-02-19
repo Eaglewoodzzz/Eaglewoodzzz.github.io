@@ -14,7 +14,7 @@
         
         <guid>https://eaglewoodzzz.github.io/p/%E5%A4%9A%E7%AB%AF%E7%BC%96%E8%BE%91/</guid>
         <description>&lt;h1 id=&#34;多端编辑&#34;&gt;多端编辑
-&lt;/h1&gt;&lt;p&gt;这篇文章由手机编写。&lt;/p&gt;
+&lt;/h1&gt;&lt;p&gt;这篇文章由手机编写，通过坚果云同步到电脑，随后由hugo发布。&lt;/p&gt;
 &lt;h3 id=&#34;坚果云&#34;&gt;坚果云
 &lt;/h3&gt;&lt;p&gt;坚果云负责同步手机端和电脑端，将电脑端的content/post文件夹设置为同步，这样就可以同时在手机和电脑端访问到文章文件了。&lt;/p&gt;
 &lt;h3 id=&#34;手机端&#34;&gt;手机端
