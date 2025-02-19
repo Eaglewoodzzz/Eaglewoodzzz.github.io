@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="几经波折，终于成功的搭建了一个自己的博客。\n这是我的第一篇文章 也不分享什么东西，只是展示一下它搭建成功了。\n但是为什么文章封面有时显示不出来呢？\n关于评论系统 好不容易搭建了一个giscus的评论系统，弄好后才发现需要登录才能回复，对路人太不友好了&#x1f622;,等有空了再试试waline\u200b,我看这个不用登陆就可以评论。\n(不过有谁会看到我的博客呢？又有谁会评论呢&#x1f604;)\n关于多端编辑 这句话是用手机的mt文本编辑器编辑的，并且由坚果云同步到电脑\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="这是我的第一篇文章 几经波折，终于成功的搭建了一个自己的博客。也不分享什么东西，只是展示一下它搭建成功了。\n关于发布文章 1.创建文章 hugo运行后，在命令行里执行\nhugo new content/post/&#34;%TITLE%&#34;/index.md ::&#34;%TITLE%&#34;为文章标题 例如我想发布一篇名为《你好》的文章，输入命令\nhugo new content/post/&#34;你好&#34;/index.md 然后再到hugo目录下进入content/post/你好/,点击里面的一个（也是唯一一个）index.md文件，开始编辑内容。\n2.编辑文章 进入index.md文件后，可以看到如下结构：\n其中，红框框住的部分是文章属性，包含作者、日期、标题、分类、标签等信息。绿框框住的部分即为文章正文，用markdown格式编写即可。\n3.上传文章 本地编辑好之后，只能在本地的hugo看到，如果想让文章网上冲浪，就要部署到自己的网站。由于hugo是静态博客，所以对项目的每一步操作完成之后都需要上传到网站。\n我这里使用的是github的page页面，每次编辑好新文章之后需要手动push到git仓库。打开命令行，输入如下命令：\ngit add . git commit -m &#34;commit&#34; git branch -M main git push -u origin main 稍等片刻即可再github上看到自己的文章。\n4.半自动化 由于每次发文章都需要用命令行来创建文章，并且还要push到git，于是懒惰的我决定用cmd脚本来实现半自动化。\n（1）自动创建文章 在hugo根目录下新建文件newTitle.cmd，编辑并输入以下代码：\n@echo off :: 关闭命令回显 chcp 65001 &gt;nul :: 设置编码为UTF-8，支持中文输入 :: 提示用户输入文章名称 set /p TITLE=请输入文章名称（支持中文和英文）： :: 判断用户是否输入了内容 if &#34;%TITLE%&#34;==&#34;&#34; ( echo 错误：文章名称不能为空！ pause exit /b ) :: 执行 hugo new 命令 hugo new content/post/&#34;%TITLE%&#34;/index.md :: 判断命令是否执行成功 if %errorlevel%==0 ( echo 成功创建文章：%TITLE% ) else ( echo 创建文章失败，请检查 Hugo 是否正确安装或路径是否正确。 ) pause 保存后双击运行，命令行会提示输入“文章标题”，输入之后回车，即可在content/post/目录看到新文章的文件夹，开始编辑即可。\n">
 <title>你好</title>
 
 <link rel='canonical' href='https://eaglewoodzzz.github.io/p/%E4%BD%A0%E5%A5%BD/'>
 
 <link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="你好">
-<meta property='og:description' content="几经波折，终于成功的搭建了一个自己的博客。\n这是我的第一篇文章 也不分享什么东西，只是展示一下它搭建成功了。\n但是为什么文章封面有时显示不出来呢？\n关于评论系统 好不容易搭建了一个giscus的评论系统，弄好后才发现需要登录才能回复，对路人太不友好了&#x1f622;,等有空了再试试waline\u200b,我看这个不用登陆就可以评论。\n(不过有谁会看到我的博客呢？又有谁会评论呢&#x1f604;)\n关于多端编辑 这句话是用手机的mt文本编辑器编辑的，并且由坚果云同步到电脑\n">
+<meta property='og:description' content="这是我的第一篇文章 几经波折，终于成功的搭建了一个自己的博客。也不分享什么东西，只是展示一下它搭建成功了。\n关于发布文章 1.创建文章 hugo运行后，在命令行里执行\nhugo new content/post/&#34;%TITLE%&#34;/index.md ::&#34;%TITLE%&#34;为文章标题 例如我想发布一篇名为《你好》的文章，输入命令\nhugo new content/post/&#34;你好&#34;/index.md 然后再到hugo目录下进入content/post/你好/,点击里面的一个（也是唯一一个）index.md文件，开始编辑内容。\n2.编辑文章 进入index.md文件后，可以看到如下结构：\n其中，红框框住的部分是文章属性，包含作者、日期、标题、分类、标签等信息。绿框框住的部分即为文章正文，用markdown格式编写即可。\n3.上传文章 本地编辑好之后，只能在本地的hugo看到，如果想让文章网上冲浪，就要部署到自己的网站。由于hugo是静态博客，所以对项目的每一步操作完成之后都需要上传到网站。\n我这里使用的是github的page页面，每次编辑好新文章之后需要手动push到git仓库。打开命令行，输入如下命令：\ngit add . git commit -m &#34;commit&#34; git branch -M main git push -u origin main 稍等片刻即可再github上看到自己的文章。\n4.半自动化 由于每次发文章都需要用命令行来创建文章，并且还要push到git，于是懒惰的我决定用cmd脚本来实现半自动化。\n（1）自动创建文章 在hugo根目录下新建文件newTitle.cmd，编辑并输入以下代码：\n@echo off :: 关闭命令回显 chcp 65001 &gt;nul :: 设置编码为UTF-8，支持中文输入 :: 提示用户输入文章名称 set /p TITLE=请输入文章名称（支持中文和英文）： :: 判断用户是否输入了内容 if &#34;%TITLE%&#34;==&#34;&#34; ( echo 错误：文章名称不能为空！ pause exit /b ) :: 执行 hugo new 命令 hugo new content/post/&#34;%TITLE%&#34;/index.md :: 判断命令是否执行成功 if %errorlevel%==0 ( echo 成功创建文章：%TITLE% ) else ( echo 创建文章失败，请检查 Hugo 是否正确安装或路径是否正确。 ) pause 保存后双击运行，命令行会提示输入“文章标题”，输入之后回车，即可在content/post/目录看到新文章的文件夹，开始编辑即可。\n">
 <meta property='og:url' content='https://eaglewoodzzz.github.io/p/%E4%BD%A0%E5%A5%BD/'>
 <meta property='og:site_name' content='沉香子'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-01-12T13:43:45&#43;08:00'/><meta property='article:modified_time' content='2025-01-12T13:43:45&#43;08:00'/><meta property='og:image' content='https://eaglewoodzzz.github.io/p/%E4%BD%A0%E5%A5%BD/helena-hertz-wWZzXlDpMog-unsplash.jpg' />
 <meta name="twitter:title" content="你好">
-<meta name="twitter:description" content="几经波折，终于成功的搭建了一个自己的博客。\n这是我的第一篇文章 也不分享什么东西，只是展示一下它搭建成功了。\n但是为什么文章封面有时显示不出来呢？\n关于评论系统 好不容易搭建了一个giscus的评论系统，弄好后才发现需要登录才能回复，对路人太不友好了&#x1f622;,等有空了再试试waline\u200b,我看这个不用登陆就可以评论。\n(不过有谁会看到我的博客呢？又有谁会评论呢&#x1f604;)\n关于多端编辑 这句话是用手机的mt文本编辑器编辑的，并且由坚果云同步到电脑\n"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="这是我的第一篇文章 几经波折，终于成功的搭建了一个自己的博客。也不分享什么东西，只是展示一下它搭建成功了。\n关于发布文章 1.创建文章 hugo运行后，在命令行里执行\nhugo new content/post/&#34;%TITLE%&#34;/index.md ::&#34;%TITLE%&#34;为文章标题 例如我想发布一篇名为《你好》的文章，输入命令\nhugo new content/post/&#34;你好&#34;/index.md 然后再到hugo目录下进入content/post/你好/,点击里面的一个（也是唯一一个）index.md文件，开始编辑内容。\n2.编辑文章 进入index.md文件后，可以看到如下结构：\n其中，红框框住的部分是文章属性，包含作者、日期、标题、分类、标签等信息。绿框框住的部分即为文章正文，用markdown格式编写即可。\n3.上传文章 本地编辑好之后，只能在本地的hugo看到，如果想让文章网上冲浪，就要部署到自己的网站。由于hugo是静态博客，所以对项目的每一步操作完成之后都需要上传到网站。\n我这里使用的是github的page页面，每次编辑好新文章之后需要手动push到git仓库。打开命令行，输入如下命令：\ngit add . git commit -m &#34;commit&#34; git branch -M main git push -u origin main 稍等片刻即可再github上看到自己的文章。\n4.半自动化 由于每次发文章都需要用命令行来创建文章，并且还要push到git，于是懒惰的我决定用cmd脚本来实现半自动化。\n（1）自动创建文章 在hugo根目录下新建文件newTitle.cmd，编辑并输入以下代码：\n@echo off :: 关闭命令回显 chcp 65001 &gt;nul :: 设置编码为UTF-8，支持中文输入 :: 提示用户输入文章名称 set /p TITLE=请输入文章名称（支持中文和英文）： :: 判断用户是否输入了内容 if &#34;%TITLE%&#34;==&#34;&#34; ( echo 错误：文章名称不能为空！ pause exit /b ) :: 执行 hugo new 命令 hugo new content/post/&#34;%TITLE%&#34;/index.md :: 判断命令是否执行成功 if %errorlevel%==0 ( echo 成功创建文章：%TITLE% ) else ( echo 创建文章失败，请检查 Hugo 是否正确安装或路径是否正确。 ) pause 保存后双击运行，命令行会提示输入“文章标题”，输入之后回车，即可在content/post/目录看到新文章的文件夹，开始编辑即可。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://eaglewoodzzz.github.io/p/%E4%BD%A0%E5%A5%BD/helena-hertz-wWZzXlDpMog-unsplash.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
@@ -232,8 +232,16 @@
     <li>
       <ol>
         <li><a href="#这是我的第一篇文章">这是我的第一篇文章</a></li>
+        <li><a href="#关于发布文章">关于发布文章</a>
+          <ol>
+            <li><a href="#1创建文章">1.创建文章</a></li>
+            <li><a href="#2编辑文章">2.编辑文章</a></li>
+            <li><a href="#3上传文章">3.上传文章</a></li>
+            <li><a href="#4半自动化">4.半自动化</a></li>
+            <li><a href="#5多端编辑">5.多端编辑</a></li>
+          </ol>
+        </li>
         <li><a href="#关于评论系统">关于评论系统</a></li>
-        <li><a href="#关于多端编辑">关于多端编辑</a></li>
       </ol>
     </li>
   </ol>
@@ -327,17 +335,88 @@
     <section class="article-content">
     
     
-    <p>几经波折，终于成功的搭建了一个自己的博客。</p>
-<h3 id="这是我的第一篇文章">这是我的第一篇文章
-</h3><p>也不分享什么东西，只是展示一下它搭建成功了。</p>
+    <h3 id="这是我的第一篇文章">这是我的第一篇文章
+</h3><p>几经波折，终于成功的搭建了一个自己的博客。也不分享什么东西，只是展示一下它搭建成功了。</p>
 <hr>
-<p>但是为什么文章封面有时显示不出来呢？</p>
+<h3 id="关于发布文章">关于发布文章
+</h3><h4 id="1创建文章">1.创建文章
+</h4><p>hugo运行后，在命令行里执行</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>hugo new content/post/<span style="color:#98c379">&#34;</span><span style="color:#e06c75">%TITLE%</span><span style="color:#98c379">&#34;</span>/index.md
+</span></span><span style="display:flex;"><span>:<span style="color:#7f848e">:&#34;%TITLE%&#34;为文章标题</span>
+</span></span></code></pre></div><p>例如我想发布一篇名为《你好》的文章，输入命令</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>hugo new content/post/<span style="color:#98c379">&#34;你好&#34;</span>/index.md
+</span></span></code></pre></div><p>然后再到hugo目录下进入<code>content/post/你好/</code>,点击里面的一个（也是唯一一个）<code>index.md</code>文件，开始编辑内容。</p>
+<h4 id="2编辑文章">2.编辑文章
+</h4><p>进入<code>index.md</code>文件后，可以看到如下结构：</p>
+<p><img src="D:%5cmyblog%5chugo_extended_withdeploy_0.140.2_windows-amd64%5cMyBlog%5ccontent%5cpost%5chello_world%5cPixPin_2025-02-19_19-27-59.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="PixPin_2025-02-19_19-27-59"
+	
+	
+></p>
+<p>其中，红框框住的部分是文章属性，包含作者、日期、标题、分类、标签等信息。绿框框住的部分即为文章正文，用markdown格式编写即可。</p>
+<h4 id="3上传文章">3.上传文章
+</h4><p>本地编辑好之后，只能在本地的hugo看到，如果想让文章网上冲浪，就要部署到自己的网站。由于hugo是静态博客，所以对项目的每一步操作完成之后都需要上传到网站。</p>
+<p>我这里使用的是github的page页面，每次编辑好新文章之后需要手动push到git仓库。打开命令行，输入如下命令：</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#98c379">&#34;commit&#34;</span>
+</span></span><span style="display:flex;"><span>git branch -M main
+</span></span><span style="display:flex;"><span>git push -u origin main
+</span></span></code></pre></div><p>稍等片刻即可再github上看到自己的文章。</p>
+<h4 id="4半自动化">4.半自动化
+</h4><p>由于每次发文章都需要用命令行来创建文章，并且还要push到git，于是懒惰的我决定用cmd脚本来实现半自动化。</p>
+<h5 id="1自动创建文章">（1）自动创建文章
+</h5><p>在hugo根目录下新建文件<code>newTitle.cmd</code>，编辑并输入以下代码：</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>@<span style="color:#c678dd">echo</span> off
+</span></span><span style="display:flex;"><span>:<span style="color:#7f848e">: 关闭命令回显</span>
+</span></span><span style="display:flex;"><span>chcp 65001 &gt;nul
+</span></span><span style="display:flex;"><span>:<span style="color:#7f848e">: 设置编码为UTF-8，支持中文输入</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>:<span style="color:#7f848e">: 提示用户输入文章名称</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">set</span> <span style="color:#c678dd">/p</span> <span style="color:#e06c75">TITLE</span>=请输入文章名称（支持中文和英文）： 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>:<span style="color:#7f848e">: 判断用户是否输入了内容</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">if</span> <span style="color:#98c379">&#34;</span><span style="color:#e06c75">%TITLE%</span><span style="color:#98c379">&#34;</span><span style="color:#56b6c2">==</span><span style="color:#98c379">&#34;&#34;</span> (
+</span></span><span style="display:flex;"><span>    <span style="color:#c678dd">echo</span> 错误：文章名称不能为空！
+</span></span><span style="display:flex;"><span>    <span style="color:#c678dd">pause</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#c678dd">exit</span> /b
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>:<span style="color:#7f848e">: 执行 hugo new 命令</span>
+</span></span><span style="display:flex;"><span>hugo new content/post/<span style="color:#98c379">&#34;</span><span style="color:#e06c75">%TITLE%</span><span style="color:#98c379">&#34;</span>/index.md
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>:<span style="color:#7f848e">: 判断命令是否执行成功</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">if</span> <span style="color:#e06c75">%errorlevel%</span><span style="color:#56b6c2">==</span>0 (
+</span></span><span style="display:flex;"><span>    <span style="color:#c678dd">echo</span> 成功创建文章：<span style="color:#e06c75">%TITLE%</span>
+</span></span><span style="display:flex;"><span>) <span style="color:#c678dd">else</span> (
+</span></span><span style="display:flex;"><span>    <span style="color:#c678dd">echo</span> 创建文章失败，请检查 Hugo 是否正确安装或路径是否正确。
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">pause</span>
+</span></span></code></pre></div><p>保存后双击运行，命令行会提示输入“文章标题”，输入之后回车，即可在<code>content/post/</code>目录看到新文章的文件夹，开始编辑即可。</p>
+<h5 id="2自动发布文章">（2）自动发布文章
+</h5><p>同理，新建文件<code>git_push_all.bat</code>，编辑并输入以下代码：</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#98c379">&#34;commit&#34;</span>
+</span></span><span style="display:flex;"><span>git branch -M main
+</span></span><span style="display:flex;"><span>git push -u origin main
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">pause</span>
+</span></span></code></pre></div><p>双击运行即可直接将更改过后的项目推送到git仓库，稍等片刻即可在网站上看到新的文章。</p>
+<h4 id="5多端编辑">5.多端编辑
+</h4><p>有时候灵感迸发，或者闲的无聊的时候就会在手机上写文章，如果在手机上写好了再传给电脑多少有点麻烦，于是搭建了一套多端编辑的方案。</p>
+<h5 id="1坚果云">（1）坚果云
+</h5><p>手机端和电脑端都下载坚果云软件，并将<code>content/post/</code>文件夹在坚果云中设置为同步文件夹，这样即可在手机、平板和电脑上共同访问post文件夹了。</p>
+<p>例如我想在手机上写一篇标题为《我好帅》的文章，打开坚果云后在<code>/post</code>云文件夹下面新建文档，此时新建的文档为txt文件，如果不做格式要求，可以直接在txt里面编写，保存之后即可在电脑上看到编写的文字，再重复上述发布文章的步骤即可。</p>
+<h5 id="2mt文件编辑器">（2）MT文件编辑器
+</h5><p>在手机上用txt文件编写markdown语法的文章多少有点不方便，这里我选择用MT文件管理器自带的MT文件编辑器来编辑文章。按照上述方法创建好新文档之后，先保存空文档（**一定要先保存！！！如果编辑之后再保存有几率会丢失！！！**别问我怎么知道的&#x1f622;）。确认好该文档被保存之后，再到坚果云软件里面点进去，用MT文件编辑器来打开，再用markdown语法编写文章即可，后续步骤与上面相同。</p>
+<hr>
 <h3 id="关于评论系统">关于评论系统
 </h3><p>好不容易搭建了一个giscus的评论系统，弄好后才发现需要登录才能回复，对路人太不友好了&#x1f622;,等有空了再试试waline​,我看这个不用登陆就可以评论。</p>
 <p>(不过有谁会看到我的博客呢？又有谁会评论呢&#x1f604;)</p>
-<hr>
-<h3 id="关于多端编辑">关于多端编辑
-</h3><p>这句话是用手机的mt文本编辑器编辑的，并且由坚果云同步到电脑</p>
 
 </section>
 

@@ -73,17 +73,88 @@
         <pubDate>Sun, 12 Jan 2025 13:43:45 +0800</pubDate>
         
         <guid>https://eaglewoodzzz.github.io/p/%E4%BD%A0%E5%A5%BD/</guid>
-        <description>&lt;img src="https://eaglewoodzzz.github.io/p/%E4%BD%A0%E5%A5%BD/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post 你好" /&gt;&lt;p&gt;几经波折，终于成功的搭建了一个自己的博客。&lt;/p&gt;
-&lt;h3 id=&#34;这是我的第一篇文章&#34;&gt;这是我的第一篇文章
-&lt;/h3&gt;&lt;p&gt;也不分享什么东西，只是展示一下它搭建成功了。&lt;/p&gt;
+        <description>&lt;img src="https://eaglewoodzzz.github.io/p/%E4%BD%A0%E5%A5%BD/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post 你好" /&gt;&lt;h3 id=&#34;这是我的第一篇文章&#34;&gt;这是我的第一篇文章
+&lt;/h3&gt;&lt;p&gt;几经波折，终于成功的搭建了一个自己的博客。也不分享什么东西，只是展示一下它搭建成功了。&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;但是为什么文章封面有时显示不出来呢？&lt;/p&gt;
+&lt;h3 id=&#34;关于发布文章&#34;&gt;关于发布文章
+&lt;/h3&gt;&lt;h4 id=&#34;1创建文章&#34;&gt;1.创建文章
+&lt;/h4&gt;&lt;p&gt;hugo运行后，在命令行里执行&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new content/post/&lt;span style=&#34;color:#98c379&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;%TITLE%&lt;/span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;&amp;#34;&lt;/span&gt;/index.md
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:&lt;span style=&#34;color:#7f848e&#34;&gt;:&amp;#34;%TITLE%&amp;#34;为文章标题&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;例如我想发布一篇名为《你好》的文章，输入命令&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new content/post/&lt;span style=&#34;color:#98c379&#34;&gt;&amp;#34;你好&amp;#34;&lt;/span&gt;/index.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然后再到hugo目录下进入&lt;code&gt;content/post/你好/&lt;/code&gt;,点击里面的一个（也是唯一一个）&lt;code&gt;index.md&lt;/code&gt;文件，开始编辑内容。&lt;/p&gt;
+&lt;h4 id=&#34;2编辑文章&#34;&gt;2.编辑文章
+&lt;/h4&gt;&lt;p&gt;进入&lt;code&gt;index.md&lt;/code&gt;文件后，可以看到如下结构：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;D:%5cmyblog%5chugo_extended_withdeploy_0.140.2_windows-amd64%5cMyBlog%5ccontent%5cpost%5chello_world%5cPixPin_2025-02-19_19-27-59.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;PixPin_2025-02-19_19-27-59&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;其中，红框框住的部分是文章属性，包含作者、日期、标题、分类、标签等信息。绿框框住的部分即为文章正文，用markdown格式编写即可。&lt;/p&gt;
+&lt;h4 id=&#34;3上传文章&#34;&gt;3.上传文章
+&lt;/h4&gt;&lt;p&gt;本地编辑好之后，只能在本地的hugo看到，如果想让文章网上冲浪，就要部署到自己的网站。由于hugo是静态博客，所以对项目的每一步操作完成之后都需要上传到网站。&lt;/p&gt;
+&lt;p&gt;我这里使用的是github的page页面，每次编辑好新文章之后需要手动push到git仓库。打开命令行，输入如下命令：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m &lt;span style=&#34;color:#98c379&#34;&gt;&amp;#34;commit&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git branch -M main
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git push -u origin main
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;稍等片刻即可再github上看到自己的文章。&lt;/p&gt;
+&lt;h4 id=&#34;4半自动化&#34;&gt;4.半自动化
+&lt;/h4&gt;&lt;p&gt;由于每次发文章都需要用命令行来创建文章，并且还要push到git，于是懒惰的我决定用cmd脚本来实现半自动化。&lt;/p&gt;
+&lt;h5 id=&#34;1自动创建文章&#34;&gt;（1）自动创建文章
+&lt;/h5&gt;&lt;p&gt;在hugo根目录下新建文件&lt;code&gt;newTitle.cmd&lt;/code&gt;，编辑并输入以下代码：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;@&lt;span style=&#34;color:#c678dd&#34;&gt;echo&lt;/span&gt; off
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:&lt;span style=&#34;color:#7f848e&#34;&gt;: 关闭命令回显&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;chcp 65001 &amp;gt;nul
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:&lt;span style=&#34;color:#7f848e&#34;&gt;: 设置编码为UTF-8，支持中文输入&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:&lt;span style=&#34;color:#7f848e&#34;&gt;: 提示用户输入文章名称&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color:#c678dd&#34;&gt;/p&lt;/span&gt; &lt;span style=&#34;color:#e06c75&#34;&gt;TITLE&lt;/span&gt;=请输入文章名称（支持中文和英文）： 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:&lt;span style=&#34;color:#7f848e&#34;&gt;: 判断用户是否输入了内容&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#98c379&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;%TITLE%&lt;/span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#56b6c2&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; (
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#c678dd&#34;&gt;echo&lt;/span&gt; 错误：文章名称不能为空！
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#c678dd&#34;&gt;pause&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#c678dd&#34;&gt;exit&lt;/span&gt; /b
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:&lt;span style=&#34;color:#7f848e&#34;&gt;: 执行 hugo new 命令&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new content/post/&lt;span style=&#34;color:#98c379&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e06c75&#34;&gt;%TITLE%&lt;/span&gt;&lt;span style=&#34;color:#98c379&#34;&gt;&amp;#34;&lt;/span&gt;/index.md
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:&lt;span style=&#34;color:#7f848e&#34;&gt;: 判断命令是否执行成功&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#e06c75&#34;&gt;%errorlevel%&lt;/span&gt;&lt;span style=&#34;color:#56b6c2&#34;&gt;==&lt;/span&gt;0 (
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#c678dd&#34;&gt;echo&lt;/span&gt; 成功创建文章：&lt;span style=&#34;color:#e06c75&#34;&gt;%TITLE%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;) &lt;span style=&#34;color:#c678dd&#34;&gt;else&lt;/span&gt; (
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#c678dd&#34;&gt;echo&lt;/span&gt; 创建文章失败，请检查 Hugo 是否正确安装或路径是否正确。
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;pause&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;保存后双击运行，命令行会提示输入“文章标题”，输入之后回车，即可在&lt;code&gt;content/post/&lt;/code&gt;目录看到新文章的文件夹，开始编辑即可。&lt;/p&gt;
+&lt;h5 id=&#34;2自动发布文章&#34;&gt;（2）自动发布文章
+&lt;/h5&gt;&lt;p&gt;同理，新建文件&lt;code&gt;git_push_all.bat&lt;/code&gt;，编辑并输入以下代码：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m &lt;span style=&#34;color:#98c379&#34;&gt;&amp;#34;commit&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git branch -M main
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git push -u origin main
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;pause&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;双击运行即可直接将更改过后的项目推送到git仓库，稍等片刻即可在网站上看到新的文章。&lt;/p&gt;
+&lt;h4 id=&#34;5多端编辑&#34;&gt;5.多端编辑
+&lt;/h4&gt;&lt;p&gt;有时候灵感迸发，或者闲的无聊的时候就会在手机上写文章，如果在手机上写好了再传给电脑多少有点麻烦，于是搭建了一套多端编辑的方案。&lt;/p&gt;
+&lt;h5 id=&#34;1坚果云&#34;&gt;（1）坚果云
+&lt;/h5&gt;&lt;p&gt;手机端和电脑端都下载坚果云软件，并将&lt;code&gt;content/post/&lt;/code&gt;文件夹在坚果云中设置为同步文件夹，这样即可在手机、平板和电脑上共同访问post文件夹了。&lt;/p&gt;
+&lt;p&gt;例如我想在手机上写一篇标题为《我好帅》的文章，打开坚果云后在&lt;code&gt;/post&lt;/code&gt;云文件夹下面新建文档，此时新建的文档为txt文件，如果不做格式要求，可以直接在txt里面编写，保存之后即可在电脑上看到编写的文字，再重复上述发布文章的步骤即可。&lt;/p&gt;
+&lt;h5 id=&#34;2mt文件编辑器&#34;&gt;（2）MT文件编辑器
+&lt;/h5&gt;&lt;p&gt;在手机上用txt文件编写markdown语法的文章多少有点不方便，这里我选择用MT文件管理器自带的MT文件编辑器来编辑文章。按照上述方法创建好新文档之后，先保存空文档（**一定要先保存！！！如果编辑之后再保存有几率会丢失！！！**别问我怎么知道的&amp;#x1f622;）。确认好该文档被保存之后，再到坚果云软件里面点进去，用MT文件编辑器来打开，再用markdown语法编写文章即可，后续步骤与上面相同。&lt;/p&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;关于评论系统&#34;&gt;关于评论系统
 &lt;/h3&gt;&lt;p&gt;好不容易搭建了一个giscus的评论系统，弄好后才发现需要登录才能回复，对路人太不友好了&amp;#x1f622;,等有空了再试试waline​,我看这个不用登陆就可以评论。&lt;/p&gt;
 &lt;p&gt;(不过有谁会看到我的博客呢？又有谁会评论呢&amp;#x1f604;)&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;关于多端编辑&#34;&gt;关于多端编辑
-&lt;/h3&gt;&lt;p&gt;这句话是用手机的mt文本编辑器编辑的，并且由坚果云同步到电脑&lt;/p&gt;
 </description>
         </item>
         <item>
